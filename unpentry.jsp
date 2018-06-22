@@ -110,7 +110,7 @@ else {
 
 </script>
 <!-- Start of vYetti Customization -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+<script src="../../resources/js/TweenMax.min.js"></script>
 <link rel="stylesheet" type="text/css" href="../../resources/css/app.component.css">
 <form #loginForm="ngForm" (ngSubmit)="login()">
   <div class="svgContainer">
@@ -249,9 +249,11 @@ else {
     <p id="rsaamID">
        <label id="checkboxLabel"><input id="rsaamCheckbox" disabled="false" type="checkbox" onchange='enableRsaam(this);'/>${rsaam}</label>
     </p>
+    <div id="response" style="display:none"></div>
     <p id="loginButtonRow">
        <input id="submit" class="button blue" type="submit" value=${login} onclick="submitentry()"/>
     </p>
+    <div id="progressBar" style="display:none"><img src="../../resources/img/Marge-anim-progressbar.gif"></div>
     <p id="logonBannerID">
       <input id="logonBannerCheckbox" type="checkbox" onclick="isBannerChecked()"/>
       <span id="agreementMsg">${iAgreeTo}</span>
@@ -299,9 +301,11 @@ Original vSphere Client Login Form
            //document.write("<img id=\"VCSSO-Title\" src=\"../../resources/img/VCSSO-title.png\" />");
            }
    </script>
-   <div id="response" style="display:none"></div>
+   <!-- don't show login response and progressbar here
+     <div id="response" style="display:none"></div>
    </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
    <div id="progressBar" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../../resources/img/Marge-anim-progressbar.gif"></div>
+   -->
 </div>
 
 <div id="footer" class="footer">

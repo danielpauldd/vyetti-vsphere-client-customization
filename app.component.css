@@ -88,7 +88,7 @@ html {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 100%;
-    height: 65px;
+    height: 2em;
     font-size: 1.55em;
     color: #353538;
     font-weight: 600;
@@ -159,9 +159,37 @@ html {
             transform: translate(1.4em, 2em) scale(0.65);
     opacity: 1;
   }
+  p#sessionID {
+    float: left;
+    width: unset;
+    margin-bottom: 0;
+  }
   label#checkboxLabel {
-    padding-left: 0px;
-    text-indent: -2.1em;
-    font-size: 0.7em;
+    font-size: 0.8em;
     color: white;
   }
+  div#response {
+    float: left;
+    margin-top: 0;
+    font-family:  inherit;
+    font-weight:  700;
+    color: white;
+    font-size:  0.8em;
+    text-indent: 0.2em;
+    margin-left: 0.2em;
+  }
+  div#progressBar {
+    margin-left: 0.4em;
+    height: 0;
+    padding: 0;
+    margin: 0;
+  }
+  p#logonBannerID {
+    float: left;
+    padding: 0;
+    margin: 0 0 0 0.2em;
+    height: 0;
+    text-indent: 0.3em;
+    color: white;
+    font-size: .8em;
+}
