@@ -47,5 +47,5 @@ cp /root/ROOT.war /usr/lib/vmware-sso/vmware-sts/webapps/ROOT.war
 ```
 Finally, to verify that that our changes will go into effect, we can simply issue a reboot to our VCSA and we should see that any customization changes made to the vSphere Client Login UI will now persist after a system restart.
 
-**If someone knows an easier way to bring the changes into effect, so please leave a message**
+**If someone knows an easier way to bring the changes into effect, so please leave a message**\
 *(especially while testing it's very frustrating to reboot hole VCSA everytime)*
